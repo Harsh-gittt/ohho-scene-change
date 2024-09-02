@@ -1,0 +1,79 @@
+body {
+    background-image: url("https://img.freepik.com/premium-photo/black-night-sky-with-stars-words-stars-it_994023-120867.jpg");
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    transition: all linear 200;
+}
+
+.day {
+    background-image: url('https://img.freepik.com/premium-photo/clouds-sky-kids-background-backgrounds-outdoors-nature_53876-330672.jpg?size=626&ext=jpg');
+    background-size: cover;
+}
+
+button {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: black;
+    background-color: white;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all linear 200;
+
+}
+
+.moon {
+    height: 300px;
+    width: 300px;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/colored-weather/96/moon_forecast_weather-512.png");
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.sun {
+    background-image: url("https://cdn4.iconfinder.com/data/icons/weather-29/256/sun_simple-128.png");
+}
+
+.star {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-128.png");
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    animation: animate 5s linear;
+}
+
+.bird {
+    height: 100px;
+    width: 100px;
+    background-image: url("https://cdn3.iconfinder.com/data/icons/new-year-and-christmas-3-1/100/new_year_xmas_christmas-04-512.png");
+    background-size: cover;
+    position: absolute;
+    pointer-events: none;
+    animation: animate 5s linear;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100% {
+        transform: translate(5%, -1000%);
+        opacity: 0.3;
+        filter: hue-rotate(-360deg);
+    }
+}
